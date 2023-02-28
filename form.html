@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作成フォーム（仮）</title>
+</head>
+<body>
+  <h1>データ入力窓口</h1>
+  <form action="http://localhost:3000/api/update/63fd329ec110792e03ea4a4d" method="post">
+    タイトル:<input type="text" name="title">
+    イメージ:<input type="text" name="image">
+    価格:<input type="text" name="price">
+    説明:<textarea type="text" name="description"></textarea>
+    メールアドレス:<input type="email" name="email">
+
+    <button type="submit">投稿</button>
+  </form>
+</body>
+</html>

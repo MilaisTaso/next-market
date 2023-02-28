@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新規会員登録（仮）</title>
+</head>
+<body>
+  <h1>ユーザーデータ入力窓口</h1>
+  <form action="http://localhost:3000/api/user/register" method="post">
+    名前:<input type="text" name="name">
+    メールアドレス:<input type="email" name="email">
+    パスワード:<input type="password" name="password">
+    <button type="submit">登録</button>
+  </form>
+</body>
+</html>
