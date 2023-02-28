@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken"
 import connectDB from "@/utils/database";
 import { UserModel } from "@/utils/schemaModels";
 
-const secretKey = "next-market"
+const secretKey =  process.env.SECRET_KEY
 
 const loginUser = async (req, res) => {
   try {
