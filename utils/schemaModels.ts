@@ -1,7 +1,19 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema
 
-const ItemSchema = new Schema({
+interface ItemDataType {
+  title: string
+  image: string
+  price: number
+  description: string
+  email: string
+}
+interface UserDataType {
+  name: string
+  email: string
+  password: string
+}
+const ItemSchema = new Schema<ItemDataType> ({
   title: String,
   image: String,
   price: String,
@@ -9,7 +21,7 @@ const ItemSchema = new Schema({
   email: String
 })
 
-const UserSchema = new Schema({
+const UserSchema = new Schema< UserDataType> ({
   name: {
     type: String,
     required: true,
